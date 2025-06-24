@@ -35,6 +35,6 @@ module "java_app" {
   # RDS Configuration
   db_name           = "javaappdb"
   db_username       = "dbadmin"
-  db_password       = "ChangeMe123!" # In production, use AWS Secrets Manager or similar
+  db_password       = var.db_password
   db_instance_class = "db.t3.medium"
 }
